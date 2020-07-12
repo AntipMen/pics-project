@@ -1,0 +1,18 @@
+.enterprise-card {
+  background-color: #fc0;
+}
+
+.enterprise-plan .btn {
+  background-color: #fc0;
+  color: #000;
+}
+
+.enterprise-card img {
+  margin: -35px 0 -15px;
+  width: 95px;
+  margin-bottom: 10px;
+}
+
+.enterprise-plan {
+  color: #000;
+}

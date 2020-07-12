@@ -1,0 +1,70 @@
+.signup-wrapper {
+  background-color: #303030;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 1200px;
+}
+.signup-title {
+  font-size: 57px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.signup-benefits {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-benefits span {
+  /* flex: 0 0 25%; */
+  font-size: 18px;
+}
+.set {
+  border-radius: 50%;
+  flex: 0 0 6px;
+  height: 6px;
+  background-color: #999;
+  margin: 6px 41px;
+}
+
+.btn-primary {
+  margin: 0 8px;
+  border: 1px solid #fc0;
+  background-color: #fc0;
+  font-weight: 300;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  width: 33.3333%;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.signup-form {
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+  padding: 30px;
+  border-radius: 0 0 6px 6px;
+}
+.signup-container {
+  display: flex;
+  width: 870px;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 50px;
+}
+.signup-input {
+  margin: 0 8px;
+  width: 33.3333%;
+  box-sizing: border-box;
+  border: 1px solid #d0d0d0;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 4px 15px 5px;
+  border-radius: 5px;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.signup-intro {
+  padding: 30px;
+}

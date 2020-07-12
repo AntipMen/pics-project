@@ -1,0 +1,38 @@
+.faq {
+  margin: 200px 0 0;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1160px;
+}
+.faq h2 {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.question,
+.selected {
+  margin-bottom: 25px;
+  /* display: inline-block; */
+  /* cursor: pointer; */
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.answer {
+  margin-top: 1em;
+  margin-bottom: 4em;
+  color: #c1c1c1;
+}
+
+.question:hover,
+.selected {
+  color: #fc0;
+}
+
+.selected {
+  margin-bottom: 0;
+}

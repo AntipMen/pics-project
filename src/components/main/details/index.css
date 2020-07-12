@@ -1,0 +1,137 @@
+.table-info,
+.table-detail,
+.table-detail div,
+.select {
+  display: flex;
+  width: 1280px;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.table-info,
+.select {
+  padding-bottom: 20px;
+  margin-top: 40px;
+  border-bottom: 1px solid #222;
+}
+
+.table-info td,
+.table-detail td,
+.select td {
+  width: 184px;
+}
+
+.table-detail div {
+  height: 100px;
+  flex: 0 0 14%;
+}
+
+.table-detail th,
+.table-detail td {
+  text-align: center;
+  color: #999;
+  font-size: 15px;
+}
+
+.table-info th,
+.select th {
+  padding-left: 25px;
+  text-align: left;
+  color: #999;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: auto;
+  display: block;
+  padding-right: 12px;
+  max-width: 170px;
+  position: relative;
+  flex: 0 0 14.29%;
+}
+
+.table-detail {
+  flex-direction: column;
+}
+
+.table-info th::before,
+.select th::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  transition: all 0.3s;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 15px;
+  font-family: monospace;
+  font-size: 15px;
+  content: "\25BC";
+}
+.table-info th::before {
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+.select th::before {
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+.table-detail th,
+.table-detail td {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.table-detail th {
+  flex: 0 0 14.29%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 25px;
+  text-align: left;
+  color: #999;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* .table-detail div {
+text-align: center;
+} */
+
+.table-detail:nth-child(odd) {
+  background-color: #1c1c1c;
+}
+
+.table-detail:nth-child(even) {
+  background-color: #151515;
+}
+
+.icon img,
+.icon {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-left: -12px;
+  transform: translate(12px);
+  max-width: 100%;
+  text-align: left;
+}
+.icon {
+  padding-left: 5px;
+}
+.icon:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: -60px;
+  top: -50px;
+  z-index: 1;
+  background: black;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}

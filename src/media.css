@@ -1,0 +1,319 @@
+@media (min-width: 1025px) {
+  .section-desktop {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .dws-menu .menu-list {
+    display: none;
+  }
+  .sub-menu {
+    top: 0;
+  }
+  .toggle-menu,
+  .hamburger {
+    display: block;
+  }
+
+  .dws-menu .toggle-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  .dws-menu .hamburger {
+    position: fixed;
+    width: 28px;
+    height: 31px;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    top: 50px;
+    right: 20px;
+  }
+
+  .dws-menu .hamburger i,
+  .dws-menu .hamburger::before,
+  .dws-menu .hamburger::after {
+    content: "";
+    background: #fff;
+    border-radius: 0;
+    position: absolute;
+    /* top: 12px; */
+    left: 0;
+    right: 0;
+    height: 2px;
+    transition: all 0.2s linear;
+    z-index: 5;
+  }
+
+  .dws-menu .hamburger::before {
+    content: "";
+    top: 20px;
+  }
+  .dws-menu .hamburger label {
+    top: 0;
+  }
+  .dws-menu .hamburger::after {
+    top: 10px;
+  }
+
+  .dws-menu .toggle-menu:checked + .hamburger {
+    transform: rotate(-45deg);
+    color: white;
+  }
+
+  .dws-menu .toggle-menu:checked + .hamburger:before,
+  .dws-menu .toggle-menu:checked + .hamburger:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .dws-menu .toggle-menu:checked ~ .menu-list {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: auto;
+    z-index: 99;
+    background: rgba(36, 36, 36, 0.98);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    padding: 7.5% 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .dws-menu .toggle-menu:checked ~ .menu-list li {
+    margin: 15px 0;
+    line-height: 1;
+    position: relative;
+  }
+
+  .dws-menu .toggle-menu:checked ~ .menu-list a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .menu-list li:hover .sub-menu,
+  .menu-list li:hover .drop {
+    opacity: 1;
+    position: absolute;
+    max-width: 250px;
+    left: -80%;
+    overflow: auto;
+    z-index: 99;
+    background: rgba(36, 36, 36, 0.98);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    padding: 7.5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  .menu-list li:hover .drop .sub-menu1,
+  .menu-list li:hover .drop .sub-menu2 {
+    align-items: center;
+  }
+
+  .sub-menu li a:hover,
+  .drop .sub-menu1 li a:hover,
+  .drop .sub-menu2 li a:hover {
+    color: #fc0;
+  }
+
+  .sub-menu li:hover,
+  .drop .sub-menu1 li:hover,
+  .drop .sub-menu2 li:hover {
+    background: none;
+  }
+  .signup-btn a {
+    padding: 10px 36px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .signup-wrapper {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: 70px 0;
+    max-width: 100%;
+  }
+
+  .signup-benefits {
+    flex-wrap: wrap;
+  }
+  .signup-benefits span:not(.set) {
+    flex: 0 0 100%;
+    margin: 7px 0;
+  }
+  .set {
+    margin: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  main {
+    max-width: 100%;
+  }
+  .section-desktop {
+    display: none !important;
+  }
+
+  .section-mobile {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 7px;
+    flex: 0 1 160px;
+    max-width: 100%;
+  }
+  .free-plan,
+  .pay-go-plan,
+  .micro-plan,
+  .small-plan,
+  .medium-plan,
+  .enterprise-plan {
+    width: 95%;
+    width: 280px !important;
+    margin-top: 40px;
+  }
+  .free-card,
+  .paygo-card,
+  .micro-card,
+  .small-card,
+  .medium-card,
+  .enterprise-card {
+    min-height: 310px !important;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-mobile .one tr td:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .one .table-detail tr td:not(:nth-child(2)) {
+    display: none;
+  }
+  .section-mobile .two tr td:not(:nth-child(3)) {
+    display: none;
+  }
+
+  .section-mobile .three tr td:not(:nth-child(4)) {
+    display: none;
+  }
+
+  .section-mobile .four tr td:not(:nth-child(5)) {
+    display: none;
+  }
+
+  .section-mobile .five tr td:not(:nth-child(6)) {
+    display: none;
+  }
+.table-all tr td:not(:nth-child(7)) {
+    display: none;
+  }
+
+  .table-detail,
+  .table-info,
+  .select {
+    width: 561px !important;
+    max-width: 100% !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .select td,
+  .table-info td {
+    padding-left: 30px;
+  }
+  .table-detail .testimonial blockquote {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+  .table-detail tr {
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: space-around;
+  }
+  .table-detail td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial blockquote::before {
+    top: -80px !important;
+    left: -70px !important;
+  }
+
+  .testimonial q::before {
+    bottom: -100px !important;
+    right: -50px !important;
+  }
+  .signup-intro {
+    max-width: 100%;
+    margin: 0;
+  }
+  .signup-title {
+    margin-bottom: 0.5em !important;
+    font-size: 30px !important;
+  }
+  .line-up {
+    flex-wrap: wrap;
+  }
+  .line-up .footer-col1,
+  .line-up .footer-col2,
+  .line-up .footer-col3,
+  .line-up .footer-col4 {
+    flex: 0 0 45% !important;
+  }
+  .down-one {
+    flex-wrap: wrap;
+  }
+  .down-one .h-col1,
+  .down-one .h-col2 {
+    flex: 0 0 100% !important;
+  }
+  .header-menu,
+  .header-menu .container {
+    max-width: 100%;
+  }
+  .content span:nth-child(2) {
+    font-size: 90px;
+  }
+  .item-plan {
+    min-height: 64px !important;
+    padding-bottom: 20px !important;
+    font-size: 14px !important;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .table-all {
+    width: 561px;
+  }
+}

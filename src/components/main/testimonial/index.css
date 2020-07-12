@@ -1,0 +1,77 @@
+.testimonial {
+  margin: 200px 0 125px 0;
+  max-width: 1200px;
+  max-height: 162px;
+}
+
+.testimonial blockquote {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.testimonial blockquote::before {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  font-size: 12em;
+  line-height: 1;
+  color: #fc0;
+  top: -83px;
+  left: -100px;
+  z-index: 2;
+  content: "\201C";
+}
+
+.testimonial q {
+  border-radius: 6px;
+  display: block;
+  padding: 10px 15px 20px;
+  background-image: linear-gradient(
+    to top right,
+    #1e1e1e 10%,
+    transparent 100%
+  );
+  position: relative;
+  font-weight: 400;
+}
+
+.testimonial q::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  height: 0;
+  width: 0;
+  border-top: 20px solid #1e1e1e;
+  border-left: 31px solid transparent;
+}
+
+.testimonial cite {
+  display: flex;
+  margin: 20px 0 0 75px;
+  font-style: normal;
+}
+
+.testimonial q::before {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  color: #fc0;
+  bottom: -105px;
+  right: -50px;
+  z-index: 2;
+  content: "\201D";
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-logo {
+  margin-left: 12px;
+}
