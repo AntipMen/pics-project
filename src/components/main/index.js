@@ -27,6 +27,20 @@ export const MainBlock = () => {
           <MediumPlan />
           <Enterprise />
         </div>
+        <div className="section-mobile">
+          <Month onClick={() => setChange(!change)} />
+          <FreePlan />
+          <TableBlock name={"one"} />
+          <PayGoPlan />
+          <TableBlock name={"two"} />
+          <MicroPlan />
+          <TableBlock name={"three"} />
+          <SmallPlan />
+          <TableBlock name={"four"} />
+          <MediumPlan />
+          <TableBlock name={"five"} />
+          <Enterprise />
+        </div>
         <TableBlock />
         <Testimonial />
         <FAQblock />
