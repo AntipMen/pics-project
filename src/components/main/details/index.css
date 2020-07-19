@@ -5,9 +5,26 @@
   display: flex;
   width: 1280px;
   max-width: 100%;
-  justify-content: center;
 }
 
+.table-info tbody,
+.table-info tr,
+.table-detail tbody,
+.table-detail tr,
+.select tbody,
+.select tr {
+  width: 100%;
+  display: flex;
+}
+
+.table-info th,
+.table-info td,
+.table-detail td,
+.table-detail .th-main,
+.select td,
+.select th {
+  flex: 0 0 14.28%;
+}
 .table-info,
 .select {
   padding-bottom: 20px;
@@ -18,7 +35,9 @@
 .table-info td,
 .table-detail td,
 .select td {
-  width: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .table-detail div {
@@ -35,17 +54,15 @@
 
 .table-info th,
 .select th {
+  cursor: pointer;
   padding-left: 25px;
   text-align: left;
   color: #999;
-  font-size: 18px;
-  font-weight: 700;
   margin-right: auto;
   display: block;
   padding-right: 12px;
   max-width: 170px;
   position: relative;
-  flex: 0 0 14.29%;
 }
 
 .table-detail {
@@ -75,28 +92,27 @@
   transform: rotate(0);
   transition: all 0.3s;
 }
-.table-detail th,
+.table-detail .th-main,
 .table-detail td {
   height: 100px;
-  vertical-align: middle;
 }
 
-.table-detail th {
-  flex: 0 0 14.29%;
+.table-detail .th-main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 0 0 25px;
+  padding-left: 25px;
   text-align: left;
-  color: #999;
-  font-size: 15px;
-  font-weight: 400;
 }
 
-/* .table-detail div {
-text-align: center;
-} */
+.th-main th {
+  text-align: left;
+  align-items: end;
+  display: block;
+  font-weight: 400;
+  width: 100%;
+}
 
 .table-detail:nth-child(odd) {
   background-color: #1c1c1c;
@@ -108,19 +124,16 @@ text-align: center;
 
 .icon img,
 .icon {
-  display: inline-block;
-  position: relative;
+  cursor: pointer;
   width: 12px;
   height: 12px;
   vertical-align: middle;
   margin-bottom: 2px;
   margin-left: -12px;
   transform: translate(12px);
-  max-width: 100%;
-  text-align: left;
 }
 .icon {
-  padding-left: 5px;
+  padding-left: 15px;
 }
 .icon:hover::after {
   content: attr(data-title);
