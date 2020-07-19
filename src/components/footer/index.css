@@ -21,7 +21,8 @@
   border-bottom: 1px solid #3c3c3c;
 }
 
-.line-up {
+.line-up,
+.line-down {
   display: flex;
   margin: 0 -10px;
 }
@@ -73,7 +74,6 @@
 }
 
 .line-down {
-  display: flex;
   flex-direction: column;
 }
 
@@ -141,6 +141,7 @@
   flex-direction: column;
   line-height: 16px;
   font-size: 14px;
+  padding: 0 10px;
 }
 
 .footer-logo svg {
@@ -151,4 +152,26 @@
 
 .bottom {
   text-align: left;
+}
+
+@media (max-width: 630px) {
+  .line-up {
+    flex-wrap: wrap;
+  }
+  .line-up .footer-col1,
+  .line-up .footer-col2,
+  .line-up .footer-col3,
+  .line-up .footer-col4 {
+    flex: 0 0 45%;
+  }
+  .down-one {
+    flex-wrap: wrap;
+  }
+  .down-one .h-col1,
+  .down-one .h-col2 {
+    flex: 0 0 100%;
+  }
+  /* .cookies {
+    max-width: 100%;
+  } */
 }

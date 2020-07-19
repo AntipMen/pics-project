@@ -120,3 +120,78 @@
 .section-mobile {
   display: none;
 }
+
+@media (min-width: 1025px) {
+  .section-desktop {
+    max-width: 1280px;
+  }
+}
+
+@media (max-width: 630px) {
+  main {
+    max-width: 100%;
+  }
+  .middle-container {
+    width: 100%;
+  }
+  .section-desktop {
+    display: none;
+  }
+
+  .section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 7px;
+    flex: 0 1 160px;
+    max-width: 100%;
+  }
+  .free-plan,
+  .pay-go-plan,
+  .micro-plan,
+  .small-plan,
+  .medium-plan,
+  .enterprise-plan {
+    width: 280px;
+    margin-top: 40px;
+  }
+  .free-card,
+  .paygo-card,
+  .micro-card,
+  .small-card,
+  .medium-card,
+  .enterprise-card {
+    min-height: 310px;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-mobile .one tr td:not(:nth-child(2)),
+  .one .table-detail tr td:not(:nth-child(2)),
+  .section-mobile .two tr td:not(:nth-child(3)),
+  .section-mobile .three tr td:not(:nth-child(4)),
+  .section-mobile .four tr td:not(:nth-child(5)),
+  .section-mobile .five tr td:not(:nth-child(6)),
+  .section-mobile .six tr td:not(:nth-child(7)) {
+    display: none;
+  }
+
+  .content span:nth-child(2) {
+    font-size: 90px;
+  }
+  .item-plan {
+    min-height: 64px !important;
+    padding-bottom: 20px !important;
+    font-size: 14px !important;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    width: 100% !important;
+  }
+}

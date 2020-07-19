@@ -33,3 +33,25 @@
 .intro-text p {
   margin: 0 0 1em;
 }
+
+@media (max-width: 1024px) {
+  .intro-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro h1 {
+    font-size: 40px;
+  }
+  .intro-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 630px) {
+  .intro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

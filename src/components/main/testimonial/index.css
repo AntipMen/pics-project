@@ -72,6 +72,26 @@
   flex-direction: column;
 }
 
+.author span:nth-child(1) {
+  font-weight: 400;
+  color: #fff;
+}
+
 .author-logo {
   margin-left: 12px;
+}
+
+@media (max-width: 767px) {
+  .testimonial blockquote {
+    width: 95%;
+  }
+  .testimonial blockquote::before {
+    top: -80px;
+    left: -5px;
+  }
+
+  .testimonial q::before {
+    bottom: -100px;
+    right: -5px;
+  }
 }

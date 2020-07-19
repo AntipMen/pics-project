@@ -3,8 +3,9 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 200px 0;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 130px;
+  color: #fff;
 }
 .faq h2 {
   font-size: 32px;

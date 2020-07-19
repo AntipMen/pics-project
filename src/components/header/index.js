@@ -1,7 +1,6 @@
 import React, { useState, Component } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import "../../media.css";
 
 export const Header = () => {
   const [active, setActive] = useState(false);
@@ -12,7 +11,7 @@ export const Header = () => {
   return (
     <header className="header-menu">
       <div className="container">
-        <Link to="/hello">
+        <Link to="/hello" className="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 283 75"
@@ -27,6 +26,9 @@ export const Header = () => {
           </svg>
         </Link>
         <nav className="dws-menu">
+          <span className="signup-btn-one">
+            <Modal />
+          </span>
           <input type="checkbox" className="toggle-menu" id="menu" />
           <label htmlFor="menu" className="hamburger">
             <i></i>

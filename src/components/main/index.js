@@ -7,7 +7,6 @@ import { SmallPlan } from "./plans/small/index";
 import { MediumPlan } from "./plans/medium/index";
 import { Enterprise } from "./plans/enterprise/index";
 import "./index.css";
-import "../../media.css";
 import { TableBlock } from "./details";
 import { Testimonial } from "./testimonial";
 import { FAQblock } from "./faq";
@@ -31,18 +30,22 @@ export const MainBlock = () => {
           <Enterprise />
         </div>
         <div className="section-mobile">
-          <Month onClick={() => setChange(!change)} />
+          <Month
+            onCheck={(event) => setChange(event.target.checked)}
+            check={change}
+          />
           <FreePlan />
           <TableBlock name={"one"} />
           <PayGoPlan />
           <TableBlock name={"two"} />
-          <MicroPlan />
+          <MicroPlan check={change} />
           <TableBlock name={"three"} />
-          <SmallPlan />
+          <SmallPlan check={change} />
           <TableBlock name={"four"} />
-          <MediumPlan />
+          <MediumPlan check={change} />
           <TableBlock name={"five"} />
           <Enterprise />
+          <TableBlock name={"six"} />
         </div>
         <TableBlock />
         <Testimonial />

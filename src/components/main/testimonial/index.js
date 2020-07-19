@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../../image/client-sae-institute.webp";
 import "./index.css";
-import "../../../media.css";
 
 export const Testimonial = () => (
   <div className="testimonial">

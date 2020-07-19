@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-import "../../../media.css";
 
 export const SignUp = () => (
   <div className="signup-wrapper">
