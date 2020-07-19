@@ -11,8 +11,8 @@ import info from ".././../../image/info.svg";
 export const TableBlock = ({ name }) => {
   const [select, setSelect] = useState(plans);
   return (
-    <div className={name !== undefined ? name : "table-all"} select={select}>
-      {plans.map((plan) => (
+    <div className={name !== undefined ? name : "table-all"}>
+      {select.map((plan) => (
         <BasicTable key={plan.id} plan={plan} onClick={() => setSelect(plan)} />
       ))}
     </div>

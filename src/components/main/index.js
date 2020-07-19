@@ -16,15 +16,18 @@ import { SignUp } from "./signup";
 export const MainBlock = () => {
   const [change, setChange] = useState(false);
   return (
-    <main>
-      <div className="middle-pricing">
+    <main className="middle-pricing">
+      <div className="middle-container">
         <div className="section-desktop">
-          <Month onClick={() => setChange(!change)} />
+          <Month
+            onCheck={(event) => setChange(event.target.checked)}
+            check={change}
+          />
           <FreePlan />
           <PayGoPlan />
-          <MicroPlan />
-          <SmallPlan />
-          <MediumPlan />
+          <MicroPlan check={change} />
+          <SmallPlan check={change} />
+          <MediumPlan check={change} />
           <Enterprise />
         </div>
         <div className="section-mobile">

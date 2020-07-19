@@ -1,15 +1,20 @@
 import React from "react";
 import "./index.css";
 
-export const Month = () => {
+export const Month = ({ onCheck, check }) => {
   return (
     <div className="choose-month">
       <div className="switcher">
         <span className="labelA">Monthly</span>
-        <label className="switch">
-          <input className="radio-e" type="checkbox" />
+        <span className="switch">
+          <input
+            className="radio-e"
+            type="checkbox"
+            checked={check}
+            onChange={onCheck}
+          />
           <span className="slider round" />
-        </label>
+        </span>
         <span className="labelB">
           Annual
           <br />

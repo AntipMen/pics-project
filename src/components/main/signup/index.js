@@ -6,7 +6,6 @@ export const SignUp = () => (
   <div className="signup-wrapper">
     <div className="signup-intro">
       <div className="signup-title">Embrace your digital content</div>
-
       <div className="signup-benefits">
         <span className="set"></span>
         <span>Free 14-day trial</span>

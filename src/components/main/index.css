@@ -1,18 +1,27 @@
-main {
+/* main {
   padding-top: 120px;
   margin-top: -120px;
   text-align: center;
-}
+} */
 .middle-pricing {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.middle-container {
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
 }
 .section-desktop {
   display: flex;
   justify-content: space-around;
+  margin: 0 -15px;
+  position: relative;
+  left: -20px;
   width: 1280px;
+  text-align: center;
 }
 
 .free-plan,
@@ -73,7 +82,8 @@ main {
   font-weight: 700;
 }
 
-.content-mountly {
+.content-mountly,
+.content-yearly {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -82,9 +92,6 @@ main {
   padding-bottom: 12px;
 }
 
-.content-yearly {
-  display: none;
-}
 .item-plan {
   padding: 0 10px 15px;
   min-height: 104px;

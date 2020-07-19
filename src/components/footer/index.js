@@ -9,7 +9,7 @@ export const FooterBlock = () => (
     <div className="container">
       <div className="line-up">
         <div className="footer-col1">
-          <span className="footer-h">Company</span>
+          <div className="footer-h">Company</div>
           <ul>
             <li>
               <a href="#">About us</a>
@@ -44,7 +44,7 @@ export const FooterBlock = () => (
           </ul>
         </div>
         <div className="footer-col2">
-          <span className="footer-h">How it works</span>
+          <div className="footer-h">How it works</div>
           <ul>
             <li>
               <a href="#">Unrestricted Digital</a>
@@ -79,7 +79,7 @@ export const FooterBlock = () => (
           </ul>
         </div>
         <div className="footer-col3">
-          <span className="footer-h">Integrations</span>
+          <div className="footer-h">Integrations</div>
           <ul>
             <li>
               <a href="#">Integration with Google Drive</a>
@@ -140,7 +140,7 @@ export const FooterBlock = () => (
       <div className="line-down">
         <div className="down-one">
           <div className="h-col1">
-            <span className="footer-h">Solutions</span>
+            <div className="footer-h">Solutions</div>
             <div className="col-w">
               <ul>
                 <li>By Use Cases</li>
@@ -178,7 +178,7 @@ export const FooterBlock = () => (
             </div>
           </div>
           <div className="h-col2">
-            <span className="footer-h">Other products</span>
+            <div className="footer-h">Other products</div>
             <div className="col-w">
               <ul>
                 <li>

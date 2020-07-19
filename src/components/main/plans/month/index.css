@@ -20,18 +20,29 @@
 }
 .switch {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .switch input {
-  display: none;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  z-index: 2;
+  opacity: 0;
 }
 
 .slider {
   transition: 0.4s;
   position: absolute;
   top: 0;
-  left: 45px;
   bottom: 0;
   background: #333;
   width: 27px;
@@ -59,7 +70,7 @@ input:checked + .slider:before {
   transform: rotate(90deg);
   width: 45px;
   height: 27px;
-  margin: 0 15px;
+  margin: 0;
   border-radius: 2rem;
 }
 

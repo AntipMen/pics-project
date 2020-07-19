@@ -148,3 +148,10 @@
   width: 300px;
   text-align: center;
 }
+
+.table-all {
+  position: relative;
+  left: -35px;
+  margin-top: 40px;
+  width: 1280px;
+}
