@@ -6,7 +6,7 @@ Used:
 - React;
 - css.
 
-You can see the demo here: http://picsproject.annaantipova794.php.a-level.com.ua/
+You can see the demo here: http://picsproject.annaantipova794.php.a-level.com.ua/#
 
 ## First look at the page
 
