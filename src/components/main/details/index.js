@@ -59,12 +59,14 @@ const DetailTable = ({ details, show }) => {
         <table key={detail.id} className="table-detail">
           <tbody>
             <tr>
-              <th>
-                {detail.name}
-                <span className="icon" data-title={detail.prompt}>
-                  <img src={info} alt="info" />
-                </span>
-              </th>
+              <div className="th-main">
+                <th>
+                  {detail.name}
+                  <span className="icon" data-title={detail.prompt}>
+                    <img src={info} alt="info" />
+                  </span>
+                </th>
+              </div>
               {detail.value.map((index) => (
                 <td key={index.id}>
                   {index === true ? (
