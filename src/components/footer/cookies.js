@@ -9,8 +9,8 @@ export const Cookies = () => {
   return (
     <div className="cookies">
       <span>
-        This site uses cookies. You can read how we use them in our cookies
-        policy.
+        This site uses cookies. You can read how we use them in our{" "}
+        <a href="#">cookies policy.</a>
       </span>
       <button className="cookies-btn" onClick={() => setShow(false)}>
         I accept

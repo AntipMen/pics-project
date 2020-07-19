@@ -8,7 +8,7 @@
 }
 
 .footer .container {
-  max-width: 1020px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
   text-align: left;
@@ -23,18 +23,24 @@
 
 .line-up {
   display: flex;
+  margin: 0 -10px;
 }
 
 .cookies {
   bottom: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 8;
   width: 100%;
   font-size: 14px;
   padding: 2px 15px;
   background-color: #ebebeb;
   color: #999;
   text-align: center;
+}
+
+.cookies span a {
+  color: #3b94fb;
+  text-decoration: none;
 }
 
 .cookies-btn {
@@ -46,6 +52,7 @@
   line-height: 22px;
   padding: 0 20px;
   text-decoration: none;
+  margin: 6px;
 }
 .footer ul {
   padding-left: 0;
